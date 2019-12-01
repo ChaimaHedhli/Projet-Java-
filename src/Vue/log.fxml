@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LogController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="163.0" prefWidth="549.0" style="-fx-background-color: #008080;" />
+      <AnchorPane layoutY="173.0" prefHeight="401.0" prefWidth="549.0" style="-fx-background-color: #008080;">
+         <children>
+            <Label layoutX="50.0" layoutY="96.0" text=" User *" textFill="#e4e4e4">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="157.0" prefHeight="21.0" prefWidth="119.0" text="Password" textFill="#e8dcdc">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user" layoutX="195.0" layoutY="96.0" />
+            <TextField fx:id="psw" layoutX="195.0" layoutY="157.0" />
+            <Button fx:id="b1" layoutX="110.0" layoutY="223.0" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="273.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Login" />
+            <Button fx:id="b2" layoutX="187.0" layoutY="339.0" mnemonicParsing="false" onAction="#sign" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #7fffd4; -fx-border-radius: 5em; -fx-background-radius: 5em;" text="Sign up here" />
+            <Text layoutX="136.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You don't have an account Yet ?" wrappingWidth="237.58447265625" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

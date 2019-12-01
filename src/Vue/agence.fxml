@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="878.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.agenceController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="208.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="304.0" fitWidth="1023.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../App%20Java/agence_voyage.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="l" layoutX="-4.0" layoutY="303.0" prefHeight="49.0" prefWidth="933.0" style="-fx-background-color: #7fff00;" />
+      <AnchorPane layoutY="352.0" prefHeight="526.0" prefWidth="933.0" style="-fx-background-color: #00ffff;">
+         <children>
+            <Label layoutX="55.0" layoutY="23.0" prefHeight="21.0" prefWidth="79.0" text="libellé" textFill="#141414">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="77.0" text="Localisation">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="b1" layoutX="294.0" layoutY="25.0" prefHeight="31.0" prefWidth="248.0" />
+            <TextField fx:id="b2" layoutX="294.0" layoutY="79.0" prefHeight="31.0" prefWidth="248.0" />
+            <Button fx:id="ajt" layoutX="259.0" layoutY="405.0" mnemonicParsing="false" onAction="#authentifier" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="ajouter" />
+            <Button layoutX="33.0" layoutY="398.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="modifier" />
+            <Label layoutX="56.0" layoutY="129.0" prefHeight="21.0" prefWidth="125.0" text="UserName">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="b3" layoutX="294.0" layoutY="131.0" prefHeight="31.0" prefWidth="248.0" />
+            <Label layoutX="56.0" layoutY="188.0" prefHeight="21.0" prefWidth="125.0" text="Password">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="b4" layoutX="294.0" layoutY="190.0" prefHeight="31.0" prefWidth="248.0" />
+            <Label layoutX="56.0" layoutY="255.0" prefHeight="35.0" prefWidth="203.0" text="Confirm Password">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="b5" layoutX="294.0" layoutY="255.0" prefHeight="31.0" prefWidth="248.0" />
+            <Button fx:id="retour" layoutX="467.0" layoutY="405.0" mnemonicParsing="false" onAction="#log" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="LogIn" />
+            <Button fx:id="hm" layoutX="621.0" layoutY="91.0" mnemonicParsing="false" onAction="#home" prefHeight="101.0" prefWidth="85.0">
+               <graphic>
+                  <ImageView fitHeight="101.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../App%20Java/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text layoutX="646.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" />
+            <Label layoutX="56.0" layoutY="320.0" prefHeight="35.0" prefWidth="153.0" text="Code_agence">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="b6" layoutX="294.0" layoutY="322.0" prefHeight="31.0" prefWidth="248.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="952.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.clientController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="158.0" prefWidth="600.0">
+          <children>
+            <ImageView fitHeight="293.0" fitWidth="1088.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../App%20Java/les-agences-de-voyages.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lb" layoutX="1.0" layoutY="262.0" prefHeight="31.0" prefWidth="971.0" style="-fx-background-color: #7fff00;" />
+      <AnchorPane layoutX="1.0" layoutY="293.0" prefHeight="658.0" prefWidth="972.0" style="-fx-background-color: #b0e0e6;">
+         <children>
+            <Label layoutX="60.0" layoutY="31.0" prefHeight="35.0" prefWidth="136.0" text="FirstName *">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="92.0" prefHeight="35.0" prefWidth="136.0" text="LastName *">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="139.0" prefHeight="35.0" prefWidth="111.0" text="CIN *" textFill="#1e1d1d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="184.0" prefHeight="35.0" prefWidth="136.0" text="Address *">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="237.0" prefHeight="35.0" prefWidth="111.0" text="Mobile *">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="289.0" prefHeight="35.0" prefWidth="79.0" text="Mail *">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="f1" layoutX="366.0" layoutY="31.0" prefHeight="31.0" prefWidth="240.0" />
+            <TextField fx:id="f2" layoutX="366.0" layoutY="94.0" prefHeight="31.0" prefWidth="240.0" />
+            <TextField fx:id="f3" layoutX="366.0" layoutY="141.0" prefHeight="31.0" prefWidth="240.0" />
+            <TextField fx:id="f4" layoutX="366.0" layoutY="186.0" prefHeight="31.0" prefWidth="240.0" />
+            <TextField fx:id="f5" layoutX="366.0" layoutY="239.0" prefHeight="31.0" prefWidth="240.0" />
+            <TextField fx:id="f6" layoutX="366.0" layoutY="291.0" prefHeight="31.0" prefWidth="240.0" />
+            <Button fx:id="vd" layoutX="120.0" layoutY="534.0" mnemonicParsing="false" onAction="#ajout_log" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #48d1c1; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="VALIDATE" />
+            <Label layoutX="50.0" layoutY="381.0" prefHeight="35.0" prefWidth="136.0" text="Password *">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="428.0" prefHeight="35.0" prefWidth="224.0" text="Confirm Password *">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="f8" layoutX="359.0" layoutY="383.0" prefHeight="31.0" prefWidth="240.0" />
+            <TextField fx:id="f9" layoutX="359.0" layoutY="430.0" prefHeight="31.0" prefWidth="240.0" />
+            <Label layoutX="52.0" layoutY="338.0" prefHeight="35.0" prefWidth="136.0" text="UserName *">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="f7" layoutX="359.0" layoutY="340.0" prefHeight="31.0" prefWidth="240.0" />
+            <Button fx:id="log" layoutX="527.0" layoutY="534.0" mnemonicParsing="false" onAction="#authentifier" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #48d1c1; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="LOG IN" />
+            <Button fx:id="hm" layoutX="773.0" layoutY="184.0" mnemonicParsing="false" onAction="#home" prefHeight="77.0" prefWidth="91.0">
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../App%20Java/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text layoutX="773.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    HOME" wrappingWidth="97.0000034570694" />
+            <Text fill="#da1010" layoutX="63.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  * : Champs Obligatoire" wrappingWidth="223.9999896287918">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="642.0" style="-fx-background-color: #008080;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.gestionController">
+   <children>
+      <Button fx:id="clt" layoutX="177.0" layoutY="117.0" mnemonicParsing="false" onAction="#clients" prefHeight="117.0" prefWidth="144.0" text="gestion des clients" />
+      <Button fx:id="ag" layoutX="335.0" layoutY="341.0" mnemonicParsing="false" onAction="#agences" prefHeight="117.0" prefWidth="172.0" text="gestion des agences" />
+   </children>
+</AnchorPane>

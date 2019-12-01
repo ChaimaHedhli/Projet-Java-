@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1082.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.offreController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="136.0" prefHeight="945.0" prefWidth="883.0" style="-fx-background-color: #d8b8d8;">
+         <children>
+            <Label layoutX="61.0" layoutY="729.0" prefHeight="21.0" prefWidth="106.0" text="Annonce">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="t9" layoutX="259.0" layoutY="687.0" prefHeight="120.0" prefWidth="311.0" />
+            <Button fx:id="tbl" layoutX="331.0" layoutY="813.0" mnemonicParsing="false" onAction="#remplir_table" prefHeight="31.0" prefWidth="199.0" style="-fx-background-color: #d0a0dd; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Publier">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="69.0" layoutY="329.0" text="Destination">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="67.0" layoutY="389.0" text="Ville_depart">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="62.0" layoutY="449.0" text="heure_depart">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="67.0" layoutY="509.0" text="heure_arrive">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="65.0" layoutY="565.0" text="Date_depart">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="64.0" layoutY="635.0" text="Date_arrivee">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <TextField fx:id="t3" layoutX="266.0" layoutY="331.0" />
+            <TextField fx:id="t4" layoutX="266.0" layoutY="382.0" />
+            <TextField fx:id="t5" layoutX="266.0" layoutY="451.0" />
+            <TextField fx:id="t6" layoutX="266.0" layoutY="511.0" />
+            <TextField fx:id="t7" layoutX="266.0" layoutY="567.0" />
+            <TextField fx:id="t8" layoutX="266.0" layoutY="629.0" />
+            <Button fx:id="hm" layoutX="647.0" layoutY="286.0" mnemonicParsing="false" onAction="#home" prefHeight="120.0" prefWidth="137.0">
+               <graphic>
+                  <ImageView fitHeight="96.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../App%20Java/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text layoutX="669.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     HOME" wrappingWidth="114.99999475479126" />
+            <ImageView fitHeight="433.0" fitWidth="883.0" layoutX="2.0" layoutY="-245.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../App%20Java/affiche-istanbul-caire-960x472.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lab" layoutX="199.0" layoutY="802.0" prefHeight="21.0" prefWidth="390.0" />
+            <Label layoutX="79.0" layoutY="222.0" text="Code_Agence">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="276.0" text="Code_offre">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t1" layoutX="266.0" layoutY="224.0" />
+            <TextField fx:id="t2" layoutX="266.0" layoutY="278.0" />
+            <Label fx:id="lab" layoutX="224.0" layoutY="888.0" prefHeight="21.0" prefWidth="145.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

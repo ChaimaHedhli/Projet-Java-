@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1100.0" style="-fx-background-color: #008080;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GestioncltController">
+   <children>
+      <TableView fx:id="tc" layoutX="78.0" layoutY="146.0" prefHeight="453.0" prefWidth="929.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="75.0" text="id_clt" />
+          <TableColumn fx:id="c2" prefWidth="110.0" text="firstname" />
+            <TableColumn fx:id="c3" prefWidth="83.0" text="lastname" />
+            <TableColumn fx:id="c4" prefWidth="104.0" text="mobile" />
+            <TableColumn fx:id="c5" prefWidth="72.0" text="address" />
+            <TableColumn fx:id="c6" prefWidth="72.0" text="mail" />
+            <TableColumn fx:id="c7" prefWidth="140.0" text="username" />
+            <TableColumn fx:id="c8" prefWidth="122.0" text=" cin " />
+            <TableColumn fx:id="c9" prefWidth="150.0" text="password" />
+        </columns>
+      </TableView>
+      <TextField fx:id="cherch" layoutX="597.0" layoutY="61.0" prefHeight="31.0" prefWidth="358.0" text="chercher un client " />
+      <Button fx:id="loop" layoutX="964.0" layoutY="33.0" mnemonicParsing="false" onAction="#chercher" prefHeight="66.0" prefWidth="65.0">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../rechercher.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hm" layoutX="67.0" layoutY="681.0" mnemonicParsing="false" onAction="#consult" prefHeight="107.0" prefWidth="145.0">
+         <graphic>
+            <ImageView fitHeight="86.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../consult.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hm" layoutX="744.0" layoutY="704.0" mnemonicParsing="false" onAction="#home" prefHeight="107.0" prefWidth="145.0">
+         <graphic>
+            <ImageView fitHeight="117.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../App%20Java/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

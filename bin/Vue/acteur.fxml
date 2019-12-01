@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="600.0" style="-fx-background-color: #008080;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ActeurController">
+   <children>
+      <Text layoutX="132.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                         YOU ARE  ??" wrappingWidth="285.2490234375" />
+      <Button fx:id="cl" layoutX="202.0" layoutY="207.0" mnemonicParsing="false" onAction="#inscri_client" prefHeight="101.0" prefWidth="123.0" style="-fx-background-color: #00ffff;" text="CLIENT " />
+      <Button fx:id="ag" layoutX="202.0" layoutY="399.0" mnemonicParsing="false" onAction="#inscri_agence" prefHeight="101.0" prefWidth="123.0" style="-fx-background-color: #00ffff;" text="AGENCE" />
+      <Text layoutX="179.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" wrappingWidth="84.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
